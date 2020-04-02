@@ -71,6 +71,9 @@ $(".nuevaFoto").change(function () {
                     $("#editarNombre").val(respuesta['nombre']);
                     $("#editarUsuario").val(respuesta['usuario']);                    
                     $("#editarPerfil").html(respuesta['perfil']);
+                    $("#fotoActual").html(respuesta['foto']);
+                   $("#passwordActual").val(respuesta['pass']);
+
 
                     if(respuesta['foto'] !=" "){
 

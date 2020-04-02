@@ -284,7 +284,8 @@
                 <span class="input-group-addon"><i class="fa fa-lock"></i></span>
 
                 <input type="password" class="form-control input-lg" id="editarPassword" name="editarPassword" placeholder="Escriba la nueva Contraseña" required>
-
+                                
+                <input type="hidden" id="passwordActual" name="passwordActual" >
               </div>
 
             </div>
@@ -320,6 +321,7 @@
               <p class="help-block">Tamaño maximo para la imagen es 2MB</p>
 
               <img src="vistas/img/usuarios/default/anonymous.png" class="img-thumbnail previsualizar" width="80px">
+              <input type="hidden" name="fotoActual" id="fotoActual">
 
             </div>
 
