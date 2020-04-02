@@ -271,7 +271,7 @@
 
                 <span class="input-group-addon"><i class="fa fa-key"></i></span>
 
-                <input type="text" class="form-control input-lg" id="editarUsuario" name="editarUsuario" value="" required>
+                <input type="text" class="form-control input-lg" id="editarUsuario" name="editarUsuario" value="" readonly>
 
               </div>
 
@@ -283,7 +283,7 @@
 
                 <span class="input-group-addon"><i class="fa fa-lock"></i></span>
 
-                <input type="password" class="form-control input-lg" id="editarPassword" name="editarPassword" placeholder="Escriba la nueva Contraseña" required>
+                <input type="password" class="form-control input-lg" id="editarPassword" name="editarPassword" placeholder="Escriba la nueva Contraseña" >
                                 
                 <input type="hidden" id="passwordActual" name="passwordActual" >
               </div>
@@ -337,8 +337,8 @@
 
         <?php
 
-        //$crearUsuario = new ControladorUsuarios();
-        //$crearUsuario->ctrCrearUsuario();
+        $editarUsuario = new ControladorUsuarios();
+        $editarUsuario->ctrEditarUsuario();
 
 
         ?>
